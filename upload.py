@@ -60,7 +60,7 @@ def upload_imagem_roboflow(img_path, label_path, split):
         print(f"Erro crítico ao processar {img_path.name}: {e}")
         return None
 
-def processar_lotes(split_name, tamanho_lote=20):
+def processar_lotes(split_name, tamanho_lote=500):
     caminho = CONFIG["PATHS"].get(split_name)
     imagens = list((caminho / "images").glob("*.jpg"))
     
