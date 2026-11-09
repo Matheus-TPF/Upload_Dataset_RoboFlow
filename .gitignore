@@ -4,3 +4,6 @@ env
 venv
 .venv
 .log
+*.png
+*.pny
+20260804_162346_956/
